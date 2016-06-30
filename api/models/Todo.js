@@ -9,6 +9,16 @@ module.exports = {
 
   attributes: {
 
+  	id: {
+      type: 'integer',
+      primaryKey: true,
+      autoIncrement: true
+    },
+
+    user: {
+      model: 'user'
+    },
+
     message : { type: 'string' },
 
     status : { type: 'string' }

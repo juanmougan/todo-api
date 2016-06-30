@@ -9,7 +9,18 @@ module.exports = {
 
   attributes: {
 
+  	id: {
+      type: 'integer',
+      primaryKey: true,
+      autoIncrement: true
+    },
+
     user_code : { type: 'string' },
+
+    todos: {
+      collection: "todo",
+      via: "user"
+    },
 
     created_at : { type: 'timestamp' }
   }
